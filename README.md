@@ -8,6 +8,6 @@ Then we can analyze the trend of the pages by using various visualisations.
 
 The environment file (environment.yml) is included in the source file.
 
-# Flowchart of the Web Crawler
+## Flowchart of the Web Crawler
 
 ![alt image](WebCrawlerFC.png) 
