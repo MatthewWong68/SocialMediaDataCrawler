@@ -92,26 +92,32 @@ Example:
 ### Model
 
 #### 1. Post
-##### - id (String)
-id is taken from the URL, for example:
-https://www.instagram.com/p/B2UT-qaFKgy/
-id = B2UT-qaFKgy
-##### - full_text (String)
-##### - author_name (String)
-##### - crawled_dt (String)
-##### - post_dt (String)
-##### - like (int)
-##### - comment (int)
+
+|Attributes |Data Type|Description                                  |
+|---        |---      |---                                          |
+|id         |String   |unique page link from URL (primary key)      |
+|full_text  |String   |full text of the tweet                       |
+|author_name|String   |the name of the author                       |
+|crawled_dt |String   |the date of the tweet crawled                |
+|post_dt    |String   |the date of the tweet published              |
+|like       |int      |the number of like of the tweet              |
+|comment    |int      |the number of comment of the tweet           |
 
 #### 2. Page
-##### - author_name (String)
-##### - posts (int)
-##### - followers (int)
-##### - following (int)
+
+|Attributes |Data Type|Description                                  |
+|---        |---      |---                                          |
+|author_name|String   |the name of the author                       |
+|posts      |int      |the number of post the page has              |
+|followers  |int      |the number of follower                       |
+|following  |int      |the number of page it is following           |
 
 #### 3. Hashtag
-##### - feed_id (String)
-##### - text (String)
+
+|Attributes |Data Type|Description                                  |
+|---        |---      |---                                          |
+|feed_id    |int      |the id of the feed                           |
+|text       |String   |the hashtag                                  |
 
 ### Crawling steps of the program
 
